@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('Noto_Serif/NotoSerif-Regular.ttf');
+}
+
+p, h2 {
+    font-family: 'Noto Serif', 'Georgia', serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none !important;
+    z-index: 0 !important;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+#banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 253, 0.95);
+    width: 100%;
+    border-bottom: solid thin gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#more-info {
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
+    right: 5%;
+}
+
+#more-info:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5em;
+    color: rgb(81, 81, 81);
+    text-align: center;
+} 
+
+#about-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(81, 81, 81, 0.5);
+}
+
+#about {
+    z-index: 3;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-color:rgba(255, 255, 255, 0.95);
+    border: solid thin white;
+    display: flex;
+}
+
+#about-close {
+    font-family: sans-serif;
+    color:rgb(81, 81, 81);
+    font-size: 1.95em;
+    margin-right: 0.75em;
+    margin-top: 0.5em;
+    float: right;
+}
+
+#about-close:hover {
+    cursor: pointer;
+}
+
+.photo {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.photo-slide {
+    height: 100% !important;
+}
+
+.photo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.textbox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.text p {
+    font-size: 1.25em;
+    color: rgb(60, 60, 60);
+    line-height: 1.75em;
+}
+
+.text .references p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.text ul li {
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+.text ul li a {
+    color:rgb(190, 123, 0)
+}
+
+.text p a {
+    color: rgb(190, 123, 0);
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.text-container img {
+    max-width: 20px;
+}
+
+.text-container img:hover {
+    cursor: pointer;
+}
+
+.citation {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 0.75em;
+    background-color: rgba(0, 0, 0, 0.481);
+}
+
+.citation a {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}

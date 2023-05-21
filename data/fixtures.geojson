@@ -1,0 +1,80 @@
+{"type": "FeatureCollection",
+"features": [
+    {
+    "type": "Feature",
+    "properties": {
+    "description":
+    "<strong>Carrizo Plain</strong> <img src='images/carrizo_plain.jpg' alt='' /> <p>Carrizo Plain National Monument is a nature preserve in Santa Margarita bordering grasslands, mountains, and a salt lake.</p> <p>Source: Field Mag.</p>"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [-119.7929080, 35.1913582]
+    }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "description":
+        "<strong>Big Basin</strong> <img src='images/bigbasin2.jpg' alt='' /> <p>Big Basin Redwoods State Park experienced a massive wildfire in 2020. After total destruction comes opportunity - this area now blooms with fire-following wildflower species.</p> <p>Source: Washington Post.</p>"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-122.22250, 37.17250]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "description":
+        "<strong>Antelope Valley</strong> <img src='images/antelopevalley1.jpg' alt='' /> <p>Antelope Valley California Poppy Reserve is one of the most famous destinations for wildflower-viewing each spring, especially well-known for its intense displays of California's state flower - the California poppy.</p> <p>Source: California Parks and Recreation.</p>"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-118.2, 34.8]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "description":
+        "<strong>Cuyama</strong> <img src='images/cuyama1.jpg' alt='' /> <p>Cuyama, a tiny Californian town, comes alive with visitors during superblooms as nearby hillsides become covered with carpets of wildflowers.</p> <p>Source: The Atlantic.</p>"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-119.615, 34.931111]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "description":
+        "<strong>Corona</strong> <img src='images/corona1.jpg' alt='' /> <p>Wildflower-viewing opportunities abound just outside this major Californian city. Some viewers even opt to zipline through the landscape.</p> <p>Source: The Atlantic.</p>"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-117.566667, 33.866667]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "description":
+        "<strong>Joshua Tree</strong> <img src='images/joshuatree1.jpg' alt='' /> <p>Joshua Tree National Park releases weekly reports on wildflower conditions throughout the spring viewable on their website.</p> <p>Source: National Park Service.</p>"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-115.87, 33.85]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+        "description":
+        "<strong>Lake Elsinore</strong> <img src='images/lakeelsinore1.jpg' alt='' /> <p>This small city is one of the most popular destinations for California poppy viewing, experiencing an influx of thousands of tourists each year.</p> <p>Source: New York Times.</p>"
+        },
+        "geometry": {
+        "type": "Point",
+        "coordinates": [-117.345278, 33.681389]
+        }
+    }
+]}

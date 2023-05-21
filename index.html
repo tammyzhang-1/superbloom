@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>California Superbloom 2023</title>
+    <link rel="stylesheet" href="styles/site.css">
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 60px; bottom: 0; width: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <div id="banner">
+            <h1>California's 2023 Superbloom</h1>
+            <img id="more-info" src="images/more-info.png" alt="more information" />
+        </div>
+
+        <div id="about-container" class="">
+            <div id="about" class="">
+                <div class="photo">
+                    <div class="photo-slide">
+                        <img src="images/superbloom1.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.npr.org/sections/pictureshow/2023/04/11/1169204488/california-wildflower-superbloom-photos">Source: NPR.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom7.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.parks.ca.gov/ImageGallery/?page_id=627">Source: California Parks and Recreation.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom2.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.fieldmag.com/articles/california-superbloom-photos-carrizo-plain">Source: Field Mag.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom3.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.parks.ca.gov/ImageGallery/?page_id=627">Source: California Parks and Recreation.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom9.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">Source: Washington Post.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom4.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.nytimes.com/2019/03/23/style/super-bloom-california-instagram-influencer.html">Source: New York Times.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom5.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">Source: Washington Post.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom6.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">Source: Washington Post.</a></p>
+                    </div>
+                    <div class="hidden photo-slide">
+                        <img src="images/superbloom8.jpg" alt="superbloom" />
+                        <p class="citation"><a href="https://www.npr.org/sections/pictureshow/2023/04/11/1169204488/california-wildflower-superbloom-photos">Source: NPR.</a></p>
+                    </div>
+                </div>
+                <div class="text">
+                    <span id="about-close">x</span>
+                    <div class="textbox">
+                        <div class="text-container">
+                            <img id="previous-slide-button" src="images/back1.png" alt="back">
+                            <div class="text-inner-container"> 
+                                <div class="text-slide">
+                                    <h2>1. Introduction</h2>
+                                    <p>In the spring of 2023, southern California stunned the world as deserts, grasslands, and hillsides
+                                        came alive with thousands and thousands of wildflowers, painting the dry landscape with vibrant color.
+                                        The phenomenon, known colloquially as a "superbloom", is a sporadic and somewhat rare event, with natural conditions
+                                        having to line up perfectly in order for all the wildflowers to appear at once.
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>2. History</h2>
+                                    <p>
+                                        <a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">In the 18th century,</a> when Spanish sailors first landed on the coast of California, they arrived in the height of a superbloom.
+                                        Seeing the hills covered in orange poppies, they called California <em>la tierra del fuego</em> - the land of fire. The California poppy
+                                        would later become the state flower, and is an iconic wildflower species to this day. Once threatened, 
+                                        the poppy has begun to recover with the establishment of nature preserves such as Antelope Valley.
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>3. The Science</h2>
+                                    <p>"Superbloom" is not a strictly defined term, but refers to a year when much more wildflowers are observed than usual - often even 
+                                        easily viewable from space and marked by a high diversity of annual species. They occur after a spell of unusually intense rain following several years of drought - 2023's rainy season, for example, saw 
+                                        <a href="https://www.ucdavis.edu/climate/blog/superbloom-or-superbust">more than 600% of the average rainfall.</a> 
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>4. The Science Pt. 2</h2>
+                                    <p>
+                                        <a href="https://www.washingtonpost.com/climate-environment/interactive/2023/california-super-bloom/">The last time a superbloom occurred in California was 2019.</a> In the last few years, many species of wildflowers have deposited their seeds into the soil,
+                                        which have remained dormant as they awaited the right conditions to germinate. With the arrival of heavy winter rains and cooler soil temperatures this spring, a large
+                                        number of wildflower species were stimulated at once - causing them all to take root and bloom.
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>5. Wildflower Species</h2>
+                                    <p>
+                                       A wide range of species are involved in superblooms, including:
+                                    </p>
+                                    <ul>
+                                        <li><a href="https://calscape.org/Eschscholzia-californica-(California-Poppy)?srchcr=sc6469a5bd5f2bc">California Poppy (<em>Eschscholzia californica</em>)</a></li>
+                                        <li><a href="https://calscape.org/Lasthenia-californica-(California-Goldfields)">California Goldfields (<em>Lasthenia californica</em>)</a></li>
+                                        <li><a href="https://calscape.org/Amsinckia-tessellata-(Fiddleneck)?srchcr=sc6469a60594fc1">Fiddleneck (<em>Amsinckia tessellata</em>)</a></li>
+                                        <li><a href="https://calscape.org/Phacelia-ciliata-(Great-Valley-Phacelia)?srchcr=sc6469a6492abb2">Great Valley Phacelia (<em>Phacelia ciliata</em>)</a></li>
+                                        <li><a href="https://calscape.org/Caulanthus-inflatus-(Desert-Candle)?srchcr=sc6469a6d56feb4">Desert Candle (<em>Caulanthus inflatus</em>)</a></li>
+                                        <li><a href="https://calscape.org/Mentzelia-pectinata-(San-Joaquin-Blazingstar)?srchcr=sc6469a73500bc2">San Joaquin Blazingstar (<em>Mentzelia pectinata</em>)</a></li>
+                                        <li><a href="https://calscape.org/Dendromecon-rigida-(Bush-Poppy)?srchcr=sc6469a770cae1f">Bush Poppy (<em>Dendromecon rigida</em>) </a></li>
+                                        <li><a href="https://calscape.org/Geranium-californicum-(California-Cranesbill)?srchcr=sc6469a7b68540e">California Cranesbill (<em>Geranium californicum</em>)</a></li>
+                                        <li><a href="https://calscape.org/Layia-glandulosa-(Yellow-Rayed-Layia)?srchcr=sc6469a815006b2">Yellow Rayed Layia (<em>Layia glandulosa</em>) </a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>6. Impact</h2>
+                                    <p>
+                                       Superblooms draw a massive influx of tourists to areas all over Southern California, sometimes overwhelming smaller towns and causing widespread traffic jams in more popular areas.
+                                       Thousands of people come to these hotspots to take photos with friends and family, and to post on social media. In the face of so many visitors, <a href="https://www.nytimes.com/2019/03/23/style/super-bloom-california-instagram-influencer.html">parks often issue notices</a> to avoid trampling 
+                                       these fragile wildflower ecosystems when taking pictures.
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>7. Future</h2>
+                                    <p>
+                                       In the wake of ongoing urban expansion and an unprecedented series of droughts in the American west, the future of the superbloom is uncertain. Some scientists believe that climate change may lessen the chances of superblooms in the future 
+                                       as precipitation becomes more unpredictable due to climate change. <a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">As stated by Evan Meyer,</a> executive director of the Theodore Payne Foundation - "This could be the best bloom for the rest of our lifetimes. Especially with climate change, we really don't know."
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide">
+                                    <h2>8. Looking Forwards</h2>
+                                    <p>
+                                      The California superblooms are a deeply awe-inspiring display of nature's beauty and resilience, as well as a testament to persistent human conservation efforts.
+                                       Among the hundreds of thousands of visitors are parents such as <a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">Pam Barajas</a>, who brought her 3-year-old daughter to Antelope Valley this year.
+
+                                      "Making sure we protect this for the next generation to come is what's important to me. I want her to be able to go outside and not think this was only something that happened years ago." ❖
+                                    </p>
+                                </div>
+                                <div class="hidden text-slide references">
+                                    <h2>References</h2>
+                                    <ul>
+                                        <li>Washington Post (<a href="https://www.washingtonpost.com/climate-environment/interactive/2023/california-super-bloom/">1</a>, <a href="https://www.washingtonpost.com/nation/interactive/2023/california-super-bloom-flowers-drought-historic-rainfall/">2</a>)</li>
+                                        <li><a href="https://www.theatlantic.com/photo/2023/04/photos-california-superbloom/673705/">The Atlantic</a></li>
+                                        <li><a href="https://www.nytimes.com/2019/03/23/style/super-bloom-california-instagram-influencer.html">The New York Times</a></li>
+                                        <li><a href="https://www.parks.ca.gov/ImageGallery/?page_id=627">California Parks and Recreation</a></li>
+                                        <li><a href="https://www.ucdavis.edu/climate/blog/superbloom-or-superbust">UC Davis</a></li>
+                                        <li><a href="https://www.nps.gov/jotr/planyourvisit/blooms.htm">National Park Service</a></li>
+                                        <li><a href="https://www.fieldmag.com/articles/california-superbloom-photos-carrizo-plain">Field Mag</a></li>
+                                        <li><a href="https://www.npr.org/sections/pictureshow/2023/04/11/1169204488/california-wildflower-superbloom-photos">NPR</a></li>
+                                    </ul>
+                                    <p>See <a href="https://modernhiker.com/best-wildflower-info-for-california-hiking/">here</a> for more information on finding locations to visit and wildflower identification resources.</p>
+                                    <p>Coded from scratch by Tammy Zhang, 2023.</p>
+                                      
+                                </div>
+                            </div>
+                            <img id="next-slide-button" src="images/next1.png" alt="next">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .mapboxgl-popup {
+                max-width: 700px;
+                min-width: 500px;
+                z-index: 4;
+                font: 14px/22px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            }
+
+            .mapboxgl-popup img {
+                max-height: 200px;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        </style>
+        <div id="map"></div>
+    </div>
+    
+    
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGFtbXktemhhbmciLCJhIjoiY2xod2p1a3NiMGhnaTNybGllMzhkeWx3YyJ9.fvUCg9TLcsZ9Gj-NaBCY8w';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [-120, 35.5],
+            zoom: 6
+        });
+         
+        map.on('load', () => {
+            map.addSource('places', {
+                'type': 'geojson',
+                'data': 'data/fixtures.geojson'
+            });
+            
+            map.addLayer({
+                'id': 'places',
+                'type': 'circle',
+                'source': 'places',
+                'paint': {
+                    'circle-color': '#fcba03',
+                    'circle-radius': 6,
+                    'circle-stroke-width': 2,
+                    'circle-stroke-color': '#ffffff'
+                }
+            });
+         
+            const popup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            });
+         
+            map.on('mouseenter', 'places', (e) => {
+                map.getCanvas().style.cursor = 'pointer';
+                
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const description = e.features[0].properties.description;
+                
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+                
+                popup.setLngLat(coordinates).setHTML(description).addTo(map);
+            });
+                
+            map.on('mouseleave', 'places', () => {
+                map.getCanvas().style.cursor = '';
+                popup.remove();
+            });
+        });
+        </script>
+
+
+
+    <script src="scripts/jquery-3.6.0.js" type="text/javascript"></script>
+	<script src="scripts/index.js"></script>
+  </body>
+</html>
